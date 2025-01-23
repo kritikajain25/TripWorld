@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women-Only Trip Booking Form</title>
+    <link rel="stylesheet" href="bookNow.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Women-Only Trip Booking Form</h1>
+        <form id="bookingForm">
+            <!-- Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <!-- Contact Number -->
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Cab Booking -->
+            <label for="cab">Do you need a cab?</label>
+            <input type="radio" id="cab_yes" name="cab" value="yes" required>
+            <label for="cab_yes">Yes</label>
+            <input type="radio" id="cab_no" name="cab" value="no" required>
+            <label for="cab_no">No</label>
+            
+            <!-- Guide Option -->
+            <label for="guide">Do you need a guide?</label>
+            <input type="checkbox" id="guide" name="guide" value="yes">
+            <label for="guide">Yes, I need a guide</label>
+            
+            <!-- Payment Options -->
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="" disabled selected>Select payment method</option>
+                <option value="cod">Cash on Delivery (COD)</option>
+                <option value="online">Online Payment</option>
+            </select>
+            
+            <!-- QR Code Scanner for Online Payment -->
+            <div id="qrPayment" class="hidden">
+                <p>Scan the QR code below for payment:</p>
+                <img src="https://paytm.com/download-paytm-app" alt="QR Code">
+            </div>
+            
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="successMessage" class="hidden">Your trip has been successfully booked!</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="bookNow.js"></script>
+</body>
+</html>

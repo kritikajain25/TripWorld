@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive hotel agency website design </title>
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- custome css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>Trip</span>World</a>
+        <nav class="navbar">
+             <a href="#home">home</a>
+             <a href="http://127.0.0.1:5500/package.html">packages</a>
+             <a href="http://127.0.0.1:5500/services.html">services</a>
+             <a href="http://127.0.0.1:5500/gallery.html">gallery</a>
+             <a href="http://127.0.0.1:5500/review.html">review</a>
+             <a href="#contact">contact</a>
+             <a href="#book">book</a>
+            
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+<!-- header section ends -->
+
+<!-- login form container -->
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+         <h3>login</h3>
+         <input type="email" class="box" placeholder="enter your email" id="email" name="email">
+         <input type="password" class="box" placeholder="password" name="password">
+         <input type="submit" value="login now" class="btn">
+         <input type="checkbox" id="remember">
+         <label for="remember">Remember me</label>
+         <p>Forgot password? <a href="http://127.0.0.1:5500/forgotPass.html">click here</a></p>
+         <p>Don't have any account? <a href="http://127.0.0.1:5500/registrationForm.html">Register now</a></p>
+    </form>
+</div>
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>welcome to A global icon of luxury</h3>
+        <p>dicover new places with us, luxury awaits</p>
+        <a href="https://www.travel-gallery.co.uk/" class="btn">discover more</a>
+    </div>
+  
+     <div class="controls">
+        <span class="vid-btn active" data-src="vid_1.mp4"></span>
+        <span class="vid-btn active" data-src="vid_2.mp4"></span>
+        <span class="vid-btn active" data-src="vid_3.mp4"></span>
+        <span class="vid-btn active" data-src="vid_1.mp4"></span>
+        <span class="vid-btn active" data-src="vid_2.mp4"></span> 
+    </div>
+
+    <div class="video-container">
+        <video src="vid-3.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+
+<!-- home section ends -->
+
+
+
+<!-- packages section starts -->
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img decoding="async" src="p-1.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Mumbai </h3>
+                <p>Mumbai is known for its natural beauty, beaches, and cosmopolitan lifestyl.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> Rs.27,000 <span>Rs.35,000</span></div>
+                <a href="http://127.0.0.1:5500/bookNow.html" class="btn">Book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="agra (1).jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Agra </h3>
+                <p>Agra is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.20,000<span>Rs.40,000</span></div>
+                <a href="http://127.0.0.1:5500/bookNow.html" class="btn">Book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="dheradun.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Dheradun </h3>
+                <p>The city is a gateway to several popular hill-stations like Mussoorie.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.30,000<span>Rs.37,000</span></div>
+                <a href="http://127.0.0.1:5500/bookNow.html" class="btn">Book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="goa (1).jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Goa </h3>
+                <p>Goa is a state in western India known for its beaches, temples, and churches.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.30,000<span>Rs.40,000</span></div>
+                <a href="http://127.0.0.1:5500/bookNow.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="kolkata (1).jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Kolkata </h3>
+                <p>Kolkata is a city that is often described as charming, beautiful, and full of hidden treasures.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.38,000<span>Rs.45,000</span></div>
+                <a href="http://127.0.0.1:5500/bookNow.html" class="btn">Book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="srinagar (1).jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Srinagar </h3>
+                <p>Srinagar is a city in the Kashmir Valley known for its natural beauty, gardens, lakes, and houseboats.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.40,000<span>Rs.55,000</span></div>
+                <a href="http://127.0.0.1:5500/bookNow.html" class="btn">Book now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- packages section ends -->
+
+<!-- services section starts -->
+
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+                <h3>Affordable Hotels</h3>
+                <p> budget hotels are designed to provide a safe, clean place to stay, with compact rooms that have a bed, clean sheets, bathroom, and basic furniture like a table and a clothes hanger. Extras like toiletries are sometimes provided as well.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+                <h3>Food and Drinks</h3>
+                <p>Food is any substance consumed to provide nutritional support and energy to an organism. It can be raw, processed, or formulated and is consumed orally by animals for growth, health, or pleasure.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+                <h3>Safty guide</h3>
+                <p>Having good awareness of threats will help you mitigate your risk of becoming a target of criminal elements abroad and knowing how to react and who to call in an emergency before arrival will give you peace of mind throughout your trip.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+                <h3>Around the world</h3>
+                <p>In India, the main tourism circuit is called the Golden Triangle: Delhi-Agra-Jaipur. The other most popular tourist states for foreigners are Rajasthan, Goa, and Kerala. There are a lot of amazing places to visit in Rajasthan alone! Mumbai, Rishikesh, Dharamsala and Pondicherry also get quite a lot of foreign tourists.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+                <h3>Fastest Travel</h3>
+                <p>Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip.</p>        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+                <h3>Adventures</h3>
+                <p>Adventure tourism is a type of tourism in which tourists engage in adventure activities such as trekking, climbing, rafting, scuba diving, or the likes. Adventure tourism gains much of its excitement by allowing the tourist to step outside their comfort zone.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- services section ends -->
+
+<!-- gallery section starts -->
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+
+<div class="box-container">
+    <div class="box">
+        <img decoding="async" src="g-1.jpg" alt="">
+        <div class="content">
+            <h3>Amazing places</h3>
+            <p> India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g-2.jpg" alt="">
+        <div class="content">
+            <h3>Amazing places</h3>
+            <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="pic1 (1).jpg" alt="">
+        <div class="content">
+            <h3>Amazing places</h3>
+            <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">See more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g-4.jpg" alt="">
+        <div class="content">
+            <h3>Amazing places</h3>
+            <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">See more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="pic2 (1).jpg" alt="">
+        <div class="content">
+            <h3>Amazing places</h3>
+            <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">See more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g-6.jpg" alt="">
+        <div class="content">
+            <h3>Amazing places</h3>
+            <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">See more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="pic3 (1).jpg" alt="">
+        <div class="content">
+            <h3>Amazing places</h3>
+            <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">See more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g-8.jpg" alt="">
+        <div class="content">
+            <h3>Amazing places</h3>
+            <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">See more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="pic4 (1).jpg" alt="">
+        <div class="content">
+            <h3>Amazing places</h3>
+            <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div class="box">
+      <img decoding="async" src="pic5 (1).jpg" alt="">
+      <div class="content">
+          <h3>Amazing places</h3>
+          <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+          <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">See more</a>
+      </div>
+  </div>
+  <div class="box">
+      <img decoding="async" src="pic6 (1).jpg" alt="">
+      <div class="content">
+          <h3>Amazing places</h3>
+          <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+          <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">See more</a>
+      </div>
+  </div>
+  <div class="box">
+      <img decoding="async" src="pic7 (1).jpg" alt="">
+      <div class="content">
+          <h3>Amazing places</h3>
+          <p>India has a unique culture and is one of the oldest and greatest civilizations of the world.</p>
+          <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn">See more</a>
+      </div>
+  </div>
+</div>
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section start -->
+
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+    <div class="swiper mySwiper review-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="pic1.png" alt="">
+                    <h3>Seema </h3>
+                    <p>Wow!!! We had such a splendid experience you My Tour Adviser...
+                        It was an amazing trip and everything so well planned and oragnised
+                        that i just had to bother about packing my bags, rest everything was seamless.
+                        I would like to thank to the team for such a wonderful 
+                        experience throughout and enjoyed the trip.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="pic2.png" alt="">
+                    <h3>Salam</h3>
+                    <p>Wow!!! We had such a splendid experience you My Tour Adviser...
+                        It was an amazing trip and everything so well planned and oragnised
+                        that i just had to bother about packing my bags, rest everything was seamless.
+                        I would like to thank to the team for such a wonderful 
+                        experience throughout and enjoyed the trip.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="pic3.png" alt="">
+                    <h3>Katrina</h3>
+                    <p>Wow!!! We had such a splendid experience you My Tour Adviser...
+                        It was an amazing trip and everything so well planned and oragnised
+                        that i just had to bother about packing my bags, rest everything was seamless.
+                        I would like to thank to the team for such a wonderful 
+                        experience throughout and enjoyed the trip.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="pic4.png" alt="">
+                    <h3>Vicky</h3>
+                    <p>Wow!!! We had such a splendid experience you My Tour Adviser...
+                        It was an amazing trip and everything so well planned and oragnised
+                        that i just had to bother about packing my bags, rest everything was seamless.
+                        I would like to thank to the team for such a wonderful 
+                        experience throughout and enjoyed the trip.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- review section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="img">
+            <img decoding="async" src="contact.png" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Contact No.">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea placeholder="Write your message..." name="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Send ">
+        </form>
+    </div>
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section -->
+
+<section class="brand-container">
+    <div class="swiper mySwiper brand-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide"><img decoding="async" src="1.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="2.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="3.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="4.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="5.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="6.jpg" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<!-- book section starts -->
+
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>B</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+        <div class="img">
+            <img decoding="async" src="book-img.svg" alt="">
+        </div>
+
+        <form action="">
+              <div class="inputBox">
+                  <h3>where to Go</h3>
+                  <input type="text" placeholder="Place Name">
+              </div>
+              <div class="inputBox">
+                <h3>Number of Person</h3>
+                <input type="number" placeholder="Enter Number">
+            </div>
+            <div class="inputBox">
+                <h3>arrival Date</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving Date</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+    </div>
+</section>
+<!-- book section ends -->
+
+<!-- map start  -->
+<div class="map-container">
+  <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671142.855229532!2d76.78322805000001!3d20.593684000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d545b8ed056d1%3A0x2a4cfb4a0179a42b!2sIndia!5e0!3m2!1sen!2sin!4v1692829194591!5m2!1sen!2sin" 
+      allowfullscreen 
+      loading="lazy">
+  </iframe>
+</div>
+
+<!-- map ends  -->
+
+<!-- footer section -->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>A women-only Travel Accommodation platform.HerSpace is designed to provide a secure,reliable and user-friendly 
+                space for women to book accommodations while traveling.
+            </p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">Mumbai</a>
+            <a href="#">Goa</a>
+            <a href="#">Shimla</a>
+            <a href="#">Manali</a>
+            <a href="#">Kota</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">package</a>
+            <a href="#">service</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+            <a href="#">book</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/">facebook</a>
+            <a href="https://www.instagram.com/">instagram</a>
+            
+           
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- custome js file link -->
+    <script src="main.js"></script>
+</body>
+</html>
